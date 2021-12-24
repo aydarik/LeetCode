@@ -1,4 +1,4 @@
-println(canBeEqual(intArrayOf(1, 4), intArrayOf(4, 1)))
+println(canBeEqual(intArrayOf(3, 7, 9), intArrayOf(3, 7, 11)))
 
 /**
  * Problem 1460
@@ -8,5 +8,5 @@ println(canBeEqual(intArrayOf(1, 4), intArrayOf(4, 1)))
  * @see <a href="https://leetcode.com/problems/make-two-arrays-equal-by-reversing-sub-arrays/">LeetCode</a>
  */
 fun canBeEqual(target: IntArray, arr: IntArray): Boolean {
-    return false
+    return target.size == arr.size && target.sorted() == arr.sorted()
 }
