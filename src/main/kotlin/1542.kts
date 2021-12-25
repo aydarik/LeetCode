@@ -1,4 +1,4 @@
-println(longestAwesome("254534643564356523464"))
+check(longestAwesome("254534643564356523464") == 21)
 
 /**
  * Problem 1542
